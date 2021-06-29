@@ -19,7 +19,7 @@ Stack* initStack(int size) {
 void push(Stack* stack, int value) {
     if (stack->tos == stack->size)
     {
-        printf("stack is Full");
+        printf("Stack is Full");
     }
     else
     {
@@ -45,7 +45,7 @@ int pop(Stack* stack) {
 void print(Stack* stack) {
     if (stack->tos == 0)
     {
-        printf("stack is Empty");
+        printf("Stack is Empty");
     }
     else
     {
