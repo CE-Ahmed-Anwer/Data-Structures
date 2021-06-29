@@ -16,8 +16,7 @@ Stack* initStack(int size) {
     return stack;
 }
 
-void push(Stack* stack, int value)
-{
+void push(Stack* stack, int value) {
     if (stack->tos == stack->size)
     {
         printf("stack is Full");
@@ -30,8 +29,7 @@ void push(Stack* stack, int value)
     }
 }
 
-int pop(Stack* stack)
-{
+int pop(Stack* stack) {
     if (stack->tos == 0)
     {
         printf("Stack is Empty");
@@ -44,8 +42,7 @@ int pop(Stack* stack)
     }
 }
 
-void print(Stack* stack)
-{
+void print(Stack* stack) {
     if (stack->tos == 0)
     {
         printf("stack is Empty");
@@ -59,8 +56,7 @@ void print(Stack* stack)
     }
 }
 
-void main()
-{
+void main() {
     Stack* stack = initStack(10);
     push(stack, 1);
     push(stack, 2);
